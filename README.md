@@ -1,30 +1,54 @@
-# React + TypeScript + Vite
+# My daily Todo Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple Todo web app built using React and JavaScript. The purpose of this application is to provide a convenient daily to do list that users can easily manage.
 
-Currently, two official plugins are available:
+![Todo Web App Preview](https://github.com/marylongworth/todo-app/blob/main/src/assets/todo-list-sample.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **User-Friendly Interface:** The app provides a simple user friendly interface for managing daily tasks.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone the repository to your local machine:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+   ```bash
+   git clone https://github.com/marylongworth/todo-web-app.git
+   ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Navigate to the project directory:
+
+   ```bash
+   cd todo-web-app
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm start
+   ```
+
+   This will open the app in your default browser. If not, you can access it at [http://localhost:3000](http://localhost:3000).
+
+## Usage
+
+1. Open the app in your web browser.
+2. Add tasks using the input field.
+3. Mark tasks as completed by clicking on them.
+4. Prioritize tasks by selecting the appropriate priority level.
+
+## Contributing
+
+If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix: `git checkout -b feature-name`.
+3. Make your changes and commit them: `git commit -m 'Description of changes'`.
+4. Push to the branch: `git push origin feature-name`.
+5. Create a pull request.
