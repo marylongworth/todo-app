@@ -1,0 +1,84 @@
+.todo-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 60vh;
+    font-family: "Montserrat", sans-serif;
+    border: 10px dotted black;
+    padding: 15px;
+    background: rgb(240, 251, 255);
+    background-clip: padding-box;
+}
+.todo-input {
+    padding: 8px;
+    margin-right: 5px;
+}
+.submit-btn {
+    background-color: #ee74af;
+    color: #fff;
+}
+
+ul.list-container {
+    margin-top: 30px;
+    margin-left: -30px;
+    list-style-type: none;
+}
+
+/* - - - - - -- Checkbox - - - - - - - - */
+
+.list-item { 
+    display: block; 
+    position: relative; 
+    margin-bottom: 15px; 
+    font-size: 1.0rem; 
+    text-align: left;
+} 
+input[type=checkbox] { 
+    visibility: hidden; 
+} 
+.todo-checkbox { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 25px; 
+    width: 25px; 
+    border: 1px solid black;
+    border-radius: .2rem;
+} 
+.list-item:hover input ~ .todo-checkbox { 
+    background-color: rgb(255, 234, 237); 
+} 
+.list-item input:active ~ .todo-checkbox { 
+    background-color: pink; 
+} 
+.list-item input:checked ~ .todo-checkbox { 
+    background-color: pink; 
+} 
+.todo-checkbox:after { 
+    content: ""; 
+    position: absolute; 
+    display: none; 
+} 
+.list-item input:checked ~ .todo-checkbox:after { 
+    display: block; 
+} 
+.list-item .todo-checkbox:after { 
+    left: 8px; 
+    bottom: 5px; 
+    width: 6px; 
+    height: 12px; 
+    border: solid white; 
+    border-width: 0 4px 4px 0; 
+    -webkit-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    transform: rotate(45deg); 
+} 
+.list-item-text { 
+    padding-left: 45px; 
+    cursor: pointer; 
+    width: 200px;
+   
+} 
+.strikethrough:checked + span{
+    text-decoration: line-through;
+}
